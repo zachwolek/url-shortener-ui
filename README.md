@@ -47,7 +47,7 @@ Right now the App component can receive information from the server, but not sen
 - When the form is submitted, the new url should POST to the the server.
 - On a _successful_ POST, the new shortened url should be added to the DOM as well. 
 
-*The user should see the new url on the DOM without having to refresh.  The new url should persist on the DOM even after refreshing*
+*The user should see the new url without the page refreshing.  The new url should persist on the DOM after refreshing as well.*
 
 ### Iteration 3
 
