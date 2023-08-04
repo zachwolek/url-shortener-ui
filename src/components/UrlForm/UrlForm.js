@@ -4,41 +4,39 @@ function UrlForm() {
   const [title, setTitle] = useState('');
   const [urlToShorten, setUrlToShorten] = useState('');
 
-  handleSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault();
     clearInputs();
   }
 
-  clearInputs = () => {
+  const clearInputs = () => {
     setTitle('');
     setUrlToShorten('');
   }
 
-  render() {
-    return (
-      <form>
-        <input
-          type='text'
-          placeholder='Title...'
-          name='title'
-          value={title}
-          // onChange={e => }
-        />
+  return (
+    <form>
+      <input
+        type='text'
+        placeholder='Title...'
+        name='title'
+        value={title}
+        // onChange={e => }
+      />
 
-        <input
-          type='text'
-          placeholder='URL to Shorten...'
-          name='title'
-          value={title}
-          // onChange={e => }
-        />
+      <input
+        type='text'
+        placeholder='URL to Shorten...'
+        name='title'
+        value={title}
+        // onChange={e => }
+      />
 
-        <button onClick={e => handleSubmit(e)}>
-          Shorten Please!
-        </button>
-      </form>
-    )
-  }
+      <button onClick={e => handleSubmit(e)}>
+        Shorten Please!
+      </button>
+    </form>
+  )
 }
 
 export default UrlForm;

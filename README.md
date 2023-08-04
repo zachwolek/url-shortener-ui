@@ -38,6 +38,7 @@ Make sure to read through all iterations before starting. There is additional AP
 A developer just left the company, and they started this front-end. Unfortunately, they didn't document their process or where they left off. 
 
 - Read through the front-end code base. Take a look at what urls are currently stored in the server. 
+- Fix any bugs/finish the unfinished functionality that are preventing the app from running.
 - Connect the front end to the back end. When the App loads, grab any existing urls on the server, and display them on the DOM. 
 
 ### Iteration 2
@@ -53,23 +54,17 @@ Right now the App component can receive information from the server, but not sen
 
 Write Cypress tests for the following user flows (don't forget to stub your network requests):
 
-* When a user visits the page, they can view the page title and the existing shortened URLs
-* When a user visits the page, they can view the Form with the proper inputs
-* When a user fills out the form, the information is reflected in the input fields
-
-### Iteration 4
-
-Write Cypress tests for the following user flows (don't forget to stub your network requests):
-
+* When a user visits the page, they can view the page title, form and the existing shortened URLs
+* When a user fills out the form, the information is reflected in the input field values
 * When a user fills out and submits the form, the new shortened URL is rendered
 
-### Iteration 5 (extension)
+### Iteration 4 (extension)
 
 Add and test sad path functionality. For example:
 - What should happen if the server sends back a failed request?
 - What should happen if the user tries to submit an incomplete form?
 
-### Iteration 6 (extension)
+### Iteration 5 (extension)
 
 Add and test delete functionality for a URL (the server side endpoint already exists).
 
