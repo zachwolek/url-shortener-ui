@@ -52,7 +52,7 @@ Right now the App component can receive information from the server, but not sen
 
 ### Iteration 3
 
-Write Cypress tests for the following user flows (don't forget to stub your network requests):
+Write Cypress tests for the following user flows.  All network requests must be stubbed.
 
 * When a user visits the page, they can view the page title, form and the existing shortened URLs
 * When a user fills out the form, the information is reflected in the input field values
