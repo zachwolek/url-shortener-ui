@@ -7,7 +7,6 @@ function UrlForm({addNewUrl}) {
   const handleSubmit = e => {
     e.preventDefault();
     const newUrl = {
-      // id: Date.now(),
       title,
       long_url: urlToShorten
     }
@@ -22,7 +21,7 @@ function UrlForm({addNewUrl}) {
 
   return (
     <form>
-      <input
+      <input 
         type='text'
         placeholder='Title...'
         name='title'
@@ -30,7 +29,7 @@ function UrlForm({addNewUrl}) {
         onChange={e => setTitle(e.target.value)}
       />
 
-      <input
+      <input 
         type='text'
         placeholder='URL to Shorten...'
         name='urlToShorten'
