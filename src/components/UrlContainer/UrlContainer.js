@@ -2,7 +2,6 @@ import React from 'react';
 import './UrlContainer.css';
 
 const UrlContainer = (props) => {
-  console.log("PROPS: ", props)
   const urlEls = props.urls.map((url, index) => {
     return (
       <div className="url" key={index}>

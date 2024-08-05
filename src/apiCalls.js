@@ -4,7 +4,6 @@ export const getUrls = () => {
 }
 
 export const postUrls = (newUrl) => {
-  console.log("NEW URL :", newUrl)
   return fetch('http://localhost:3001/api/v1/urls', {
       method: "POST",
       body: JSON.stringify(newUrl),

@@ -43,7 +43,6 @@ describe('Show Forms', () => {
     cy.get('form')
     .get('input[name="title"]').type('New URL Box')
     .should('have.value', 'New URL Box')
-    ///which do you like better? 
     .get('input[name="urlToShorten"]').type('https://example.com/example')
     .get('input[name="urlToShorten"]').should('have.value', 'https://example.com/example')
   })
@@ -61,5 +60,3 @@ describe('Show Forms', () => {
     .get('.long-url').last().contains('https://example.com/example')
   })
 })
-
-// - When a user fills out and submits the form, the new shortened URL is rendered
